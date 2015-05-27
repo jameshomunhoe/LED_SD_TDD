@@ -16,7 +16,7 @@ void SD2(State *state, uint32_t previousTime){
 
 	switch(*state){
 	case INITIAL:
-		// turnOnLED2();
+		// turnOffLED2();
 		if(delay(delay500ms, previousTime)){
 			*state = LEDON;
 			previousTime = getCurrentTime();
